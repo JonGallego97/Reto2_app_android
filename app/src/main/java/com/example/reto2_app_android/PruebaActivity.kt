@@ -2,28 +2,23 @@ package com.example.reto2_app_android
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.reto2_app_android.databinding.AuthLayoutBinding
-<<<<<<< HEAD
-=======
 import com.example.reto2_app_android.databinding.PruebaLayoutBinding
->>>>>>> origin/layouts_v1
 
-class AuthActivity: AppCompatActivity() {
+class PruebaActivity : AppCompatActivity() {
 
-    private lateinit var authLayoutBinding: AuthLayoutBinding
+    private lateinit var pruebaLayoutBinding: PruebaLayoutBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        authLayoutBinding = AuthLayoutBinding.inflate(layoutInflater)
-        setContentView(authLayoutBinding.root)
+        pruebaLayoutBinding = PruebaLayoutBinding.inflate(layoutInflater)
+        setContentView(pruebaLayoutBinding.root)
 
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        var fragment = AuthInitialFragment()
+        var fragment = Prueba1Fragment()
         fragmentTransaction.add(R.id.authFragmentContainerView, fragment)
         fragmentTransaction.commit()
-
 
 
     }
