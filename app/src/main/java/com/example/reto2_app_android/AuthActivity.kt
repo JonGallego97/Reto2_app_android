@@ -3,10 +3,7 @@ package com.example.reto2_app_android
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.reto2_app_android.databinding.AuthLayoutBinding
-<<<<<<< HEAD
-=======
-import com.example.reto2_app_android.databinding.PruebaLayoutBinding
->>>>>>> origin/layouts_v1
+
 
 class AuthActivity: AppCompatActivity() {
 
